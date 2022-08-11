@@ -14,6 +14,7 @@ const copyFile = require('./copyFile')
 const createS3PresignedDownloadUrl = require('./createS3PresignedDownloadUrl')
 const createS3PresignedUploadUrl = require('./createS3PresignedUploadUrl')
 const deleteFile = require('./deleteFile')
+const findFile = require('./findFile')
 const uploadFile = require('./uploadFile')
 
 module.exports = {
@@ -25,6 +26,7 @@ module.exports = {
   deleteFile,
   deleteS3Bucket,
   emptyS3Bucket,
+  findFile,
   S3Utils,
   uploadFile
 }
