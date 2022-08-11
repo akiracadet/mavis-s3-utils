@@ -1,6 +1,6 @@
 const {ListObjectsCommand, DeleteObjectCommand} = require('@aws-sdk/client-s3')
 
-async function emptyBucket(s3Client, bucket) {
+async function emptyS3Bucket(s3Client, bucket) {
   try {
     const data = await s3Client.send(new ListObjectsCommand({Bucket: bucket}))
     if (!data.Contents) return
@@ -21,4 +21,4 @@ async function emptyBucket(s3Client, bucket) {
   }
 }
 
-module.exports = emptyBucket
+module.exports = emptyS3Bucket
