@@ -1,5 +1,5 @@
-function helloWorld() {
-  console.log('hello, world!')
-}
+const lib = require('./lib')
 
-module.exports = helloWorld
+module.exports = {
+  ...lib
+}
