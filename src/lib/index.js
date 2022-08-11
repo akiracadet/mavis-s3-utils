@@ -5,6 +5,7 @@ const S3Utils = require('./S3Utils')
 const createS3Bucket = require('./createS3Bucket')
 const deleteS3Bucket = require('./deleteS3Bucket')
 const emptyS3Bucket = require('./emptyS3Bucket')
+const findS3Bucket = require('./findS3Bucket')
 
 // client related methods
 const createS3Client = require('./createS3Client')
@@ -27,6 +28,7 @@ module.exports = {
   deleteS3Bucket,
   emptyS3Bucket,
   findFile,
+  findS3Bucket,
   S3Utils,
   uploadFile
 }
