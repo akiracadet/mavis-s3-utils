@@ -1,5 +1,7 @@
+const express = require('./express')
 const lib = require('./lib')
 
 module.exports = {
-  ...lib
+  express,
+  lib
 }
